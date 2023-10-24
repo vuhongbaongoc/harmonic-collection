@@ -1,0 +1,32 @@
+  body {
+    background-image: url('background.jpg');
+    background-size: cover; /* Adjust to your preferred image size */
+    background-position: center center;  /* Adjust image positioning */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+  }
+  
+  .moving-text {
+    font-family: 'Dokdo', cursive; /* Use the correct font name and specify a fallback font */
+    font-size: 100px;
+    animation: moveLetters 5s linear infinite;
+    text-align: center; /* Center the text horizontally */
+    max-width: 60%; /* Set a maximum width for the text container */
+    margin: 0 auto; /* Center the text container horizontally */
+    margin-top: 40px; /* Add spacing above the text */
+    margin-bottom: 20px; /* Add spacing below the text */
+  }
+  .text-container {
+    margin-top: 200px; /* Adjust this value to add vertical space */
+  }
+  span {
+    display: inline-block;
+  }
+  @keyframes moveLetters {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+  
