@@ -1,0 +1,13 @@
+ p {
+   color: #fc85c2; 
+  }
+body {
+   background-image: url("background.jpg");
+  } 
+a { 
+   border-width: thin;
+   background-color:#ff96cb;
+    box-sizing: content-box;
+    padding: 5px;  
+    border: 5px solid rgb(255, 255, 255);
+}
