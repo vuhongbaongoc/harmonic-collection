@@ -1,11 +1,86 @@
 <!DOCTYPE html>
- <html>
-   <head>
-     <title>Harmonic Collection</title>
-   </head>
-   <body>
-     <h1>Harmonic Collection</h1>
-     <h2>By Hong Bao Ngoc Vu.</h2>
-     <p>Welcome to my site!</p>
-   </body>
- </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Borel&family=Dokdo&family=Fredericka+the+Great&family=Libre+Barcode+39+Text&family=Mali&family=Mansalva&family=Modak&family=Monsieur+La+Doulaise&family=Pixelify+Sans:wght@500&family=Silkscreen&family=Wallpoet&display=swap" rel="stylesheet">
+  <link href="entry9.css" rel="stylesheet"> 
+  <title>Harmonic Collection Entry 9</title>
+  <style>
+    body {
+      background-image: url('background.jpeg');
+      background-size: cover; /* Adjust to your preferred image size */
+      background-position: center center;  /* Adjust image positioning */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #bfbfbf;
+      animation: backgroundAnimation 10s infinite linear;
+    }
+
+    .glitch-container {
+      width: 600px;
+      height: 700px;
+      overflow: hidden;
+    }
+
+    .glitch-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .glitch {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        90deg,
+        rgba(48, 49, 45, 0.5),
+        rgba(79, 57, 57, 0.5) 2px,
+        rgba(116, 107, 107, 0.935) 2px,
+        rgba(0, 0, 0, 0.5) 4px
+      );
+      opacity: 0.7;
+    }
+
+    .diamond-container {
+      width: 100px; /* Adjust the width as needed */
+      height: 100px; /* Adjust the height as needed */
+    }
+
+    @keyframes glitch-animation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+@keyframes backgroundAnimation {
+  0% {
+    filter: brightness(10%);
+  }
+  50% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(10%);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="glitch-container">
+    <img class="glitch-image" src="background.jpeg" alt="Glitchy Image">
+    <div class="glitch"></div>
+  </div>
+
+</body>
+</html>

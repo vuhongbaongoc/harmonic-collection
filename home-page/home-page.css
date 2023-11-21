@@ -1,27 +1,37 @@
-   p {
-   color: #fc85c2; 
-  }
+/* edit background */
   body {
     background-image: url("background.jpg");
     background-repeat: repeat;
     background-blend-mode: lighten
   } 
-  a { 
-   border-width: thin;
-   background-color:#899088;
-    box-sizing:unset;
-    padding: 5px;  
-    border: 5px solid rgb(33, 35, 30);
-  }
+  
+/* edit title of page "QUOTES" */
   h1 {
-   font-family: 'Modak';
+   font-family: 'Josefin Sans';
    font-size: 100px;
    font-weight: 1000px;
-   color: rgb(252, 220, 62);  
-   text-shadow: 0 0 3px #fffd95c5, 0 0 5px #ffffff;
-  }
+   color: rgb(255, 255, 255);  
+  } 
+/* edit text below title */
   p2 { 
    font-family: 'Arizonia';
    color: rgb(250, 248, 195);  
    font-size: 20px;
   }
+ 
+/* Edit linked images (clouds) - Removes the underline from the link */
+  a {
+   text-decoration: none; 
+ }
+  img {
+   max-width: 21%;
+ }
+
+/* Make image (clouds) move up & down when hovered */
+img {
+   transition: transform 0.3s ease; /* Add a smooth transition effect */
+ }
+ img:hover {
+   transform: translateY(-30px); /* Move the image 30 pixels upward on hover */
+ }
+ 
