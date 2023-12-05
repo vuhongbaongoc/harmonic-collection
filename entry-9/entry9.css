@@ -1,0 +1,66 @@
+h1,h2,h3 {
+    color: #ff89c4;
+  }
+body {
+    background-color:rgb(24, 23, 23);
+    overflow:auto;
+  }
+html  {
+    padding: 20px;  
+  }
+  .moving-text {
+    font-family: 'Monofett';
+    color: #ff89c4;
+    font-size: 40px;
+    text-align: center;
+    max-width:80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+/* Change the color of individual letters when hovered */
+.color-change:hover {
+  color: #f49e8b; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.color-change2:hover {
+  color:#86b5f3;
+}
+.color-change3:hover {
+  color:#d5e890;
+}
+.color-change4:hover {
+  color:#b995ef;
+}
+
+.color-change5:hover {
+    color:#ffadad;
+  }
+  
+@keyframes moveLetters {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-50px);
+  }
+}
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  width: 90%;
+  height: auto;
+}
+
+
+body {
+  height: 1500px; /* Set a height for the page to enable scrolling */
+}

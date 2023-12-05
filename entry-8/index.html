@@ -5,17 +5,134 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Borel&family=Dokdo&family=Fredericka+the+Great&family=Josefin+Sans:wght@700&family=Libre+Barcode+39+Extended+Text&family=Libre+Barcode+39+Text&family=Mali&family=Mansalva&family=Marck+Script&family=Modak&family=Monofett&family=Monsieur+La+Doulaise&family=Pixelify+Sans:wght@500&family=Rubik+Bubbles&family=Silkscreen&family=VT323&family=Wallpoet&display=swap" rel="stylesheet">
-</head>
+    
+    
 
+    </head>
      <link href="entry8.css" rel="stylesheet"> 
    <body>
     <div class="moving-text text-container"> <!-- make text move up & down when hover -->
-      <script src="script.js"></script>
+      <script src="script.js"></script> 
+      
        <span class="color-change" > let ME </span>
        <span class="color-change2" > Fall </span> 
        <span class="color-change3" > for YOU </span>
        <span class="color-change4" > this Autumn. </span> 
       </div>
+      
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="image1.png" alt="Image 1">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image2.png" alt="Image 2">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image3.png" alt="Image 3">
+        </div>
+
+        <div class="mySlides">
+          <img src="image4.png" alt="Image 4">
+        </div>
+
+        <div class="mySlides">
+          <img src="image5.png" alt="Image 5">
+        </div>
+
+        <div class="mySlides">
+          <img src="image6.png" alt="Image 6">
+        </div>
+      </div>
+      
+      <script>
+        let slideIndex = 0;
+      
+        function showSlides() {
+          let i;
+          const slides = document.getElementsByClassName("mySlides");
+          
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+      
+          slideIndex++;
+      
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+      
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds (adjust as needed)
+        }
+      
+        // Start the slideshow when the page loads
+        window.onload = showSlides;
+      </script>
+ 
+ <div id="target-section">
+  <h2> Autumn <br>by GRACE PALEY </h2>
+  <p> <center> 
+    What is sometimes called a <br> 
+   tongue of flame <br>
+    or an arm extended burning <br>  
+   is only the long <br>
+red and orange branch of  <br> 
+   a green maple<br>
+in early September  reaching<br>
+   into the greenest field<br>
+out of the green woods   at the<br>
+   edge of which the birch trees   <br>
+appear a little tattered   tired<br>
+   of sustaining delicacy<br>
+all through the hot summer   re-<br>
+   minding everyone (in   <br>
+our family) of a Russian<br>
+   song   a story<br>
+by Chekhov   or my father<br>
+
+<br><br>
+What is sometimes called a <br>  
+   tongue of flame<br>
+or an arm extended   burning<br>
+   is only the long<br>
+red and orange branch of<br>
+   a green maple<br>
+in early September   reaching   <br>
+   into the greenest field<br>
+out of the green woods   at the<br>   
+   edge of which the birch trees<br>
+appear a little tattered   tired<br>
+   of sustaining delicacy<br>
+all through the hot summer   re-<br>
+   minding everyone (in   <br>
+our family) of a Russian<br>
+   song   a story by<br>
+Chekhov or my father on<br>
+   his own lawn   standing <br>  
+beside his own wood in<br>
+   the United States of   <br>
+America   saying (in Russian)<br>
+   this birch is a lovely<br>
+tree   but among the others<br>
+   somehow superficial<br>
+  </center>
+  </p>
+</div>
+
+<script>
+  document.addEventListener('click', function(event) {
+    // Check if the clicked element is not a link (to avoid interfering with links)
+    if (event.target.tagName.toLowerCase() !== 'a') {
+      // Scroll to the target section
+      document.getElementById('target-section').scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+</script>
+
    </body>
  </html>
 

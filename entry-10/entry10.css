@@ -8,14 +8,13 @@
   }
 
   .running-text {
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflowed text */
-    animation: runWords 8s linear infinite; /* Adjust the duration and timing function as needed */
+     animation: runWords 8s linear infinite; /* Adjust the duration and timing function as needed */
   }
 
   body {
-    font-family: 'Silkscreen';
+    font-family: 'Libre Barcode 39 Text';
     font-size: 30px;
+    color:brown;
+    background-color: aliceblue;
   }
-
 
