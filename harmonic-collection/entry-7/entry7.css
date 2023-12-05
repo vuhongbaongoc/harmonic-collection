@@ -1,0 +1,143 @@
+/* Changing color background effects */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation: changeColor 5s infinite;
+}
+.color-box {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the text */
+.moving-text {
+    font-family: 'Silkscreen';
+    font-size: 100px;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    animation: moveLetters 5s linear infinite; /* Make texts move up and down */
+    color:rgb(253, 253, 253);
+    line-height: 1.2; /* Adjust line height to separate letters */
+}
+span {
+    display: inline-block;
+}
+
+/* Adjust spacing of letters from the top of the page*/
+.text-container {
+    margin-top: 200px;
+}
+
+/* Move individual letters up when hovered */
+.moving-text span:hover {
+    transform: translateY(-20px); 
+}
+
+/* Change the color of individual letters when hovered */
+.color-change:hover {
+    color: #FF5733; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.color-change2:hover {
+    color:#177cff;
+}
+.color-change3:hover {
+    color:#daff55;
+}
+.color-change4:hover {
+    color:#7a22ff;
+}
+
+.color-change {
+    transition: color 0.2s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+}
+.color-change2 {
+    transition: color 0.2s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+}
+.color-change3 {
+    transition: color 0.2s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+}
+.color-change4 {
+    transition: color 0.2s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+}
+
+
+@keyframes moveLetters {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+@keyframes changeColor {
+    0% {
+        background-color: #000000;
+    }
+    20% {
+        background-color: #ffffff;
+    }
+    40% {
+        background-color: #b8d4ff;
+    }
+    60% {
+        background-color: #212121;
+    }
+    80% {
+        background-color: #bfecf3ff;
+    }
+    100% {
+        background-color: #ff8bee;
+    }
+}
+
+/* Add styles for the floating images */
+.floating-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.float-image {
+    position: absolute;
+    animation: floatImage 10s linear infinite;
+    opacity: 0.5;
+    pointer-events: none;
+    /* Add specific styles for your images (e.g., width, height, etc.) */
+    width: 500px;
+    height: auto;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translate(calc(-50% + 50vw), calc(-50% + 50vh));
+    }
+    25% {
+        transform: translate(calc(-50% + 50vw + 100px), calc(-50% + 50vh + 100px));
+    }
+    50% {
+        transform: translate(calc(-50% + 50vw - 50px), calc(-50% + 50vh + 150px));
+    }
+    75% {
+        transform: translate(calc(-50% + 50vw + 200px), calc(-50% + 50vh - 50px));
+    }
+    100% {
+        transform: translate(calc(-50% + 50vw), calc(-50% + 50vh));
+    }
+}

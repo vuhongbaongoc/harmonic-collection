@@ -1,0 +1,45 @@
+ p {
+   color: hwb(60 34% 65%); 
+   font-family: 'Josefin Sans';
+  font-size: 16px;
+  max-width: 60%; 
+  margin: 0 auto; 
+  margin-top: 50px; 
+  margin-bottom: 80px; 
+  }
+body {
+   background-image: url("background.jpg");
+  } 
+
+h1 {
+  font-family: 'Josefin Sans';
+  font-size: 100px;
+  font-weight: 1000px;
+  color: rgb(255, 255, 255);
+  max-width: 80%; /* Set a maximum width for the text container */
+  margin: 0 auto; /* Center the text container horizontally */
+  margin-top: 150px; /* Add spacing above the text */
+  margin-bottom: 20px; /* Add spacing below the text */
+ } 
+
+/* Edit for text over image */
+.container {
+  position: relative;
+  width: 300px;
+}
+
+img {
+  max-width: 350%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  transform: translate(-10%, -10%);
+  padding: 100px;
+  text-align: center;
+  width: 300%;
+}

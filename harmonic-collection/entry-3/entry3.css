@@ -1,0 +1,19 @@
+h1,h2,h3 {
+    color: #ff6ebe;
+  }
+p {
+  color:antiquewhite
+}
+  body {
+    background-image: url("background2.jpg");
+    font-family: 'Courier New', monospace;
+  }
+  img {
+    border-radius: 50%;
+    float:inherit;
+    position: absolute;
+    opacity: 0.5;
+    pointer-events: none;
+    width: 500px;
+    height: auto;
+  }
