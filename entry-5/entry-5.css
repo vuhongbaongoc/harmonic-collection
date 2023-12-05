@@ -3,6 +3,9 @@
   }
 h1 {
    background-color:#ffffff6d;
+   font-family: 'Rubik Bubbles';
+  font-size: 50px;
+  color: rgb(118, 27, 27);
   } 
 a { 
    border-width: thin;

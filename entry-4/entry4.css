@@ -1,19 +1,31 @@
 h1,h2,h3 {
-    color: #fff5ce;
+    color: #ffe345;
+    font-size:90px;
+    font-family:'VT323';
   }
 p {
-  color:rgb(120, 120, 120); 
-  position: absolute;
-    left: 300px;
-    right: 300px;
-    top: 550px;
-    bottom: 200px;
+  font-family: 'Rubik Bubbles';
+  font-size: 30px;
+  font-weight: 1000px;
+  color: rgb(202, 249, 255);
+  max-width: 80%; /* Set a maximum width for the text container */
+  margin: 0 auto; /* Center the text container horizontally */
+  margin-top: 150px; /* Add spacing above the text */
+  margin-bottom: 20px; /* Add spacing below the text */
+
 }
 body {
     background-color:#000000;
     overflow:auto;
   }
 html  {
-    border: 5px solid rgb(32, 32, 32);
     padding: 100px;  
   }
+
+  img {
+    transition: transform 0.5s ease; /* Add a smooth transition effect */
+  }
+  img:hover {
+    transform: translateY(-50px); /* Move the image 30 pixels upward on hover */
+  }
+  

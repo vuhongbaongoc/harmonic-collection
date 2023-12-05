@@ -1,5 +1,10 @@
+html  {
+  padding: 100px;  
+}
 p {
     color: #fc85c2;
+    font-family: 'Josefin Sans';
+    font-size:25px;
   }
   body {
     background-image: linear-gradient(rgb(205, 173, 173), rgb(255, 186, 219));;
@@ -10,8 +15,20 @@ p {
 ol, p2 {
   background-color: rgba(255, 255, 255, 0.258);
   color: white;
-  font-size:15px;
+  font-size:20px;
+  font-family: 'Josefin Sans';
 }
 h2 {
-  font-size:30px; 
+  font-size:100px; 
+  color: hwb(55 22% 0%); 
+  font-family: 'Josefin Sans';
+  max-width: 100%; 
+  margin: 0 auto; 
+  margin-top: 80px; 
+  margin-bottom: 80px; 
+}
+
+img {
+  cursor: pointer;
+  max-width: 40%;
 }

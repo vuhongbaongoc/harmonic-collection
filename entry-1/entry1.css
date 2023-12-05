@@ -1,25 +1,29 @@
+html  {
+  padding: 100px;  
+}
  p {
    color: hwb(60 34% 65%); 
    font-family: 'Josefin Sans';
-  font-size: 16px;
+  font-size: 15px;
   max-width: 60%; 
   margin: 0 auto; 
-  margin-top: 50px; 
+  margin-top: 80px; 
   margin-bottom: 80px; 
   }
 body {
-   background-image: url("background.jpg");
+   background-image: url("background1.jpg");
   } 
 
 h1 {
-  font-family: 'Josefin Sans';
+  font-family: 'Rubik Bubbles';
   font-size: 100px;
   font-weight: 1000px;
-  color: rgb(255, 255, 255);
+  color: rgb(202, 249, 255);
   max-width: 80%; /* Set a maximum width for the text container */
   margin: 0 auto; /* Center the text container horizontally */
   margin-top: 150px; /* Add spacing above the text */
   margin-bottom: 20px; /* Add spacing below the text */
+
  } 
 
 /* Edit for text over image */
