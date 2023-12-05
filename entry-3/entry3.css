@@ -1,19 +1,52 @@
 h1,h2,h3 {
-    color: #ff6ebe;
+    color: #7e6c28;
   }
 p {
-  color:antiquewhite
+  color:rgb(222, 220, 215)
 }
   body {
     background-image: url("background2.jpg");
-    font-family: 'Courier New', monospace;
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    font-weight: 200px;
   }
   img {
-    border-radius: 50%;
-    float:inherit;
-    position: absolute;
-    opacity: 0.5;
+    border-radius: 100%;  
     pointer-events: none;
-    width: 500px;
-    height: auto;
   }
+  .text-container {
+    margin-top: 200px;
+}
+html  {
+  padding: 100px;  
+}
+
+/* Add styles for the floating images */
+
+.float-image {
+  animation: floatImage 6s linear infinite;
+  opacity: 0.8;
+  pointer-events: none;
+  /* Add specific styles for your images (e.g., width, height, etc.) */
+  width: 300px;
+  height: 300px;
+  padding: 20px; 
+}
+
+@keyframes floatImage {
+  0% {
+      transform: translate(calc(-50% + 50vw), calc(-50% + 50vh));
+  }
+  25% {
+      transform: translate(calc(-50% + 50vw + 100px), calc(-50% + 50vh + 100px));
+  }
+  50% {
+      transform: translate(calc(-50% + 50vw - 50px), calc(-50% + 50vh + 150px));
+  }
+  75% {
+      transform: translate(calc(-50% + 50vw + 200px), calc(-50% + 50vh - 50px));
+  }
+  100% {
+      transform: translate(calc(-50% + 50vw), calc(-50% + 50vh));
+  }
+}
