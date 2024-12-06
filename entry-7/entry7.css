@@ -1,4 +1,4 @@
-/* Changing color background effects */
+/* Changing background-color effects */
 body {
     margin: 0;
     overflow: hidden;
@@ -16,74 +16,6 @@ body {
     height: 100%;
 }
 
-/* Styling for the text */
-.moving-text {
-    font-family: 'Silkscreen';
-    font-size: 100px;
-    text-align: center;
-    max-width: 60%;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    animation: moveLetters 5s linear infinite; /* Make texts move up and down */
-    color:rgb(253, 253, 253);
-    line-height: 1.2; /* Adjust line height to separate letters */
-}
-span {
-    display: inline-block;
-}
-
-/* Adjust spacing of letters from the top of the page*/
-.text-container {
-    margin-top: 200px;
-}
-
-/* Move individual letters up when hovered */
-.moving-text span:hover {
-    transform: translateY(-20px); 
-}
-
-/* Change the color of individual letters when hovered */
-.color-change:hover {
-    color: #FF5733; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.color-change2:hover {
-    color:#177cff;
-}
-.color-change3:hover {
-    color:#daff55;
-}
-.color-change4:hover {
-    color:#7a22ff;
-}
-
-.color-change {
-    transition: color 0.2s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
-}
-.color-change2 {
-    transition: color 0.2s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
-}
-.color-change3 {
-    transition: color 0.2s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
-}
-.color-change4 {
-    transition: color 0.2s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
-}
-
-
-@keyframes moveLetters {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-50px);
-    }
-}
 @keyframes changeColor {
     0% {
         background-color: #000000;
@@ -105,7 +37,41 @@ span {
     }
 }
 
-/* Add styles for the floating images */
+
+/* Floating text */
+.moving-text {
+    font-family: 'Silkscreen';
+    font-size: 100px;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    animation: moveLetters 5s linear infinite; /* Make texts move up and down */
+    color:rgb(253, 253, 253);
+    line-height: 1.2; /* Adjust line height to separate letters */
+}
+span {
+    display: inline-block;
+}
+
+/* Adjust spacing of letters from the top of the page*/
+.text-container {
+    margin-top: 200px;
+}
+
+
+@keyframes moveLetters {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+
+/* Floating images */
 .floating-images {
     position: fixed;
     top: 0;

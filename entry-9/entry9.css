@@ -4,11 +4,6 @@ h1,h2,h3 {
 body {
     background-color:rgb(24, 23, 23);
     overflow:auto;
-  }
-html  {
-    padding: 20px;  
-  }
-  .moving-text {
     font-family: 'Monofett';
     color: #ff89c4;
     font-size: 40px;
@@ -17,7 +12,13 @@ html  {
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 50px;
-}
+    height: 1500px; /* Set a height for the page to enable scrolling */
+
+  }
+html  {
+    padding: 20px;  
+  }
+  
 
 /* Change the color of individual letters when hovered */
 .color-change:hover {
@@ -56,11 +57,9 @@ html  {
   display: none;
 }
 img {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
 
-body {
-  height: 1500px; /* Set a height for the page to enable scrolling */
-}
+

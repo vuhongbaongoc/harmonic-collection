@@ -1,3 +1,4 @@
+/* basic editing */
 h1,h2,h3 {
     color: #ff89c4;
   }
@@ -7,11 +8,13 @@ p {
 body {
     background-color:rgb(46, 22, 15);
     overflow:auto;
+    height: 1500px; /* Set a height for the page to enable scrolling */
   }
 html  {
     padding: 200px;  
   }
-  .moving-text {
+
+.text {
     font-family: 'Fredericka the Great';
     color: #ff89c4;
     font-size: 90px;
@@ -22,7 +25,8 @@ html  {
     margin-bottom: 20px;
 }
 
-/* Change the color of individual letters when hovered */
+
+/* Change color when hovered */
 .color-change:hover {
   color: #FF5733; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -37,20 +41,12 @@ html  {
   color:#7a22ff;
 }
 
-@keyframes moveLetters {
-  0%, 100% {
-      transform: translateY(0);
-  }
-  50% {
-      transform: translateY(-50px);
-  }
-}
+/* image slideshow */
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
 }
-
 .mySlides {
   display: none;
 }
@@ -59,11 +55,7 @@ img {
   height: auto;
 }
 
-
-body {
-  height: 1500px; /* Set a height for the page to enable scrolling */
-}
-
+/* click to different area in page */
 #target-section {
   margin-top: 500px; /* Adjust the margin to position the target section */
   background-color: #e0e0e0;

@@ -6,10 +6,10 @@
       transform: translateX(-100%);
     }
   }
-
-  .running-text {
+.running-text {
      animation: runWords 8s linear infinite; /* Adjust the duration and timing function as needed */
   }
+
 
   body {
     font-family: 'Libre Barcode 39 Text';

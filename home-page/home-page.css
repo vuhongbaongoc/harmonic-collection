@@ -33,4 +33,8 @@ img {
  img:hover {
    transform: translateY(-30px); /* Move the image 30 pixels upward on hover */
  }
- 
+
+ .right-align {
+  float: right;
+  /* Make image float to the right of page */
+}
